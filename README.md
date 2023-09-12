@@ -20,7 +20,9 @@ For host route setup with https availability,
 Recommend to do it from the route view of the openshift,  
 that can be found under networking>routes.
 
-or for simple http, use `oc expose svc/minio-sample`
+or apply the yml, use `oc apply -f minio-route.yml -n <namespace>`
+
+for simple http, use `oc expose svc/minio-sample`
 
 Disclaimer: This is just for Testing use.  
 Reference: https://min.io/docs/minio/kubernetes/upstream/index.html 
